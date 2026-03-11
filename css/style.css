@@ -234,6 +234,7 @@ transform:rotate(-45deg);
 /* ================================
    MOBILE MENU
 ================================ */
+
 @media(max-width:768px){
 
 .nav{
@@ -243,6 +244,8 @@ width:90%;
 .menu-toggle{
 display:block;
 }
+
+/* MOBILE MENU */
 
 .nav-menu{
 
@@ -267,11 +270,13 @@ background:rgba(255,255,255,0.08);
 backdrop-filter:blur(12px);
 
 border:1px solid rgba(255,255,255,0.2);
+
 display:flex;
+
+/* hidden by default */
+
 max-height:0;
 overflow:hidden;
-
-transition:max-height .4s ease;
 
 }
 
@@ -282,7 +287,8 @@ max-height:300px;
 }
 
 }
-/* ================================
+/*
+================================
    HERO SECTION
 ================================ */
 
