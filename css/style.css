@@ -548,4 +548,222 @@ grid-column:span 1;
 }
 
 }
+/* =================================
+PROJECT SECTION
+================================= */
 
+.projects{
+padding:4rem 2rem;
+}
+
+/* Section Header */
+
+.section-header{
+text-align:center;
+margin-bottom:3rem;
+}
+
+.section-label{
+font-size:.9rem;
+letter-spacing:.1em;
+text-transform:uppercase;
+color:var(--text-secondary);
+}
+
+.section-header h2{
+font-size:clamp(2rem,4vw,3rem);
+}
+
+
+/* =================================
+PROJECT GRID
+(No Media Queries)
+================================= */
+
+.project-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(18rem,1fr));
+
+gap:2rem;
+
+}
+
+
+/* =================================
+PROJECT CARD COMPONENT
+================================= */
+
+.project-card{
+
+background:var(--glass-bg);
+
+border:1px solid var(--glass-border);
+
+border-radius:1rem;
+
+overflow:hidden;
+
+display:flex;
+flex-direction:column;
+
+box-shadow:
+0 .5rem 1rem rgba(0,0,0,.3);
+
+transition:
+transform .4s cubic-bezier(.22,1,.36,1),
+box-shadow .4s cubic-bezier(.22,1,.36,1);
+
+}
+
+
+/* =================================
+IMAGE WRAPPER
+================================= */
+
+.card-image{
+
+aspect-ratio:16/9;
+
+overflow:hidden;
+
+}
+
+.card-image img{
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+transition:
+transform .6s cubic-bezier(.22,1,.36,1);
+
+}
+
+
+/* =================================
+CARD CONTENT
+================================= */
+
+.card-content{
+
+padding:1.5rem;
+
+display:flex;
+flex-direction:column;
+
+gap:1rem;
+
+}
+
+.card-content h3{
+font-size:1.3rem;
+}
+
+.card-content p{
+
+font-size:.95rem;
+
+color:var(--text-secondary);
+
+}
+
+
+/* =================================
+TECH STACK PILLS
+================================= */
+
+.tech-stack{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:.5rem;
+
+}
+
+.tech-stack span{
+
+background:rgba(255,255,255,.08);
+
+padding:.35rem .8rem;
+
+border-radius:999rem;
+
+font-size:.8rem;
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+
+/* =================================
+PROJECT BUTTON
+================================= */
+
+.project-btn{
+
+margin-top:auto;
+
+text-decoration:none;
+
+padding:.7rem 1rem;
+
+background:var(--brand-accent);
+
+color:white;
+
+border-radius:.5rem;
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+min-height:2.75rem;
+
+transition:
+transform .3s cubic-bezier(.22,1,.36,1),
+box-shadow .3s cubic-bezier(.22,1,.36,1);
+
+}
+
+
+/* =================================
+HOVER INTERACTIONS
+================================= */
+
+.project-card:hover,
+.project-card:focus-within{
+
+transform:translateY(-.6rem);
+
+box-shadow:
+0 1.5rem 3rem rgba(0,0,0,.5);
+
+}
+
+.project-card:hover img,
+.project-card:focus-within img{
+
+transform:scale(1.08);
+
+}
+
+
+/* =================================
+BUTTON FOCUS (ACCESSIBILITY)
+================================= */
+
+.project-btn:focus{
+
+outline:2px solid var(--brand-accent);
+
+outline-offset:.2rem;
+
+}
