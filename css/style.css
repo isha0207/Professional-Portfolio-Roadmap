@@ -767,3 +767,136 @@ outline:2px solid var(--brand-accent);
 outline-offset:.2rem;
 
 }
+
+/* EXPERIENCE SECTION */
+
+.experience{
+margin-top:6rem;
+}
+
+.section-title{
+font-size:2rem;
+margin-bottom:3rem;
+}
+
+/* TIMELINE */
+
+.timeline{
+list-style:none;
+position:relative;
+padding-left:2rem;
+}
+
+.timeline::before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:2px;
+height:100%;
+background:#1e293b;
+}
+
+/* ITEM */
+
+.timeline-item{
+position:relative;
+margin-bottom:3rem;
+padding-left:2rem;
+}
+
+/* DOT */
+
+.timeline-marker{
+position:absolute;
+left:-0.45rem;
+top:1rem;
+width:0.9rem;
+height:0.9rem;
+background:#38bdf8;
+border-radius:50%;
+}
+
+/* CARD */
+
+.experience-card{
+
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,0.1);
+
+padding:1.5rem;
+
+border-radius:0.8rem;
+
+max-width:60ch;
+
+transition:all 0.3s ease;
+}
+
+.experience-card:hover{
+transform:translateY(-4px);
+border-color:#38bdf8;
+}
+
+/* HEADER */
+
+.job-header{
+display:flex;
+flex-wrap:wrap;
+gap:0.6rem 1rem;
+align-items:center;
+margin-bottom:0.8rem;
+}
+
+/* ROLE */
+
+.role{
+font-size:1.4rem;
+font-weight:700;
+}
+
+/* COMPANY */
+
+.company{
+color:#38bdf8;
+font-weight:600;
+}
+
+/* DATE */
+
+time{
+color:#94a3b8;
+letter-spacing:0.05rem;
+font-size:0.9rem;
+}
+
+/* BULLETS */
+
+.job-details{
+padding-left:1rem;
+}
+
+.job-details li{
+margin-bottom:0.4rem;
+color:#cbd5e1;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.timeline{
+padding-left:1.5rem;
+}
+
+.timeline-item{
+padding-left:1.5rem;
+}
+
+.experience-card{
+max-width:100%;
+}
+
+}
