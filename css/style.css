@@ -1010,6 +1010,22 @@ display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:2rem;
 }
+.copyright{
+
+text-align:center;
+
+margin-top:2rem;
+
+padding-top:1rem;
+
+border-top:1px solid rgba(255,255,255,0.1);
+
+color:var(--text-secondary);
+
+font-size:0.9rem;
+
+}
+
 
 .footer-col h4{
 margin-bottom:1rem;
